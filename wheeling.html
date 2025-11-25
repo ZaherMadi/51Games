@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheeling Game - 51Games</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating 5s and 1s background -->
+    <div class="floating-numbers" id="floatingNumbers"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <span class="logo-51">51</span><span class="logo-games">Games</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="index.html#featured" class="nav-link">Jeu du moment</a>
+                <a href="index.html#games" class="nav-link">Jeux</a>
+                <a href="#" class="nav-link">Catégories</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Game Page Content -->
+    <section class="legal-page">
+        <div class="container">
+            <a href="index.html" class="back-link">← Retour à l'accueil</a>
+            
+            <div class="game-page-header">
+                <h1 class="legal-title">🏍️ Wheeling Game</h1>
+                <p class="hero-subtitle" style="text-align: left; margin: 0 0 32px 0;">
+                    Maîtrisez l'art du wheeling et devenez le roi de la roue arrière ! 
+                    Plus vous tenez longtemps en équilibre, plus votre score grimpe.
+                </p>
+            </div>
+
+            <div class="game-wrapper" style="max-width: 800px; margin: 0 auto;">
+                <div class="game-info-box" style="background: var(--bg-card); border-radius: 16px; border: 2px solid var(--border-gold); overflow: hidden; margin-bottom: 32px;">
+                    <div class="game-score" style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="score-label">Score</span>
+                        <span class="score-value" id="wheelingScore">0</span>
+                    </div>
+                    <div id="wheelingGameContainer" style="width: 100%; height: 400px; background: var(--bg-secondary); display: flex; align-items: center; justify-content: center; position: relative;">
+                        <div style="text-align: center; padding: 40px;">
+                            <div style="font-size: 6rem; margin-bottom: 24px;">🏍️</div>
+                            <h3 style="font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 16px;">Wheeling Game</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 24px; max-width: 400px;">
+                                Le contenu du jeu sera bientôt disponible ! 
+                                Préparez-vous à faire des wheelies spectaculaires et à battre tous les records.
+                            </p>
+                            <div style="background: rgba(255, 215, 0, 0.1); border: 1px solid var(--border-gold); border-radius: 12px; padding: 20px; text-align: left;">
+                                <h4 style="color: var(--accent-gold); margin-bottom: 12px;">📋 Comment jouer :</h4>
+                                <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 20px;">
+                                    <li>Appuyez sur <strong style="color: var(--text-primary);">ESPACE</strong> ou <strong style="color: var(--text-primary);">↑</strong> pour lever la roue avant</li>
+                                    <li>Maintenez l'équilibre pour accumuler des points</li>
+                                    <li>Plus vous tenez longtemps, plus le multiplicateur augmente</li>
+                                    <li>Attention à ne pas basculer en arrière !</li>
+                                </ul>
+                            </div>
+                            <button class="featured-cta" style="margin-top: 24px; opacity: 0.5; cursor: not-allowed;" disabled>
+                                🎮 Bientôt disponible
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-controls">
+                        <p>Utilisez ESPACE ou ↑ pour faire un wheeling. Maintenez l'équilibre !</p>
+                    </div>
+                </div>
+
+                <!-- Leaderboard -->
+                <div class="leaderboard-section" style="background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border-color); padding: 24px;">
+                    <h3 class="leaderboard-title">🏆 Meilleurs Scores</h3>
+                    <ul class="leaderboard-list" id="wheelingLeaderboard">
+                        <li class="leaderboard-empty">Aucun score enregistré. Soyez le premier !</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-51">51</span><span class="logo-games">Games</span>
+                </div>
+                <div class="footer-links">
+                    <a href="contact.html" class="footer-link">Nous contacter</a>
+                    <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
+                    <a href="politique-confidentialite.html" class="footer-link">Politique de confidentialité</a>
+                </div>
+                <p class="footer-text">© 2024 5Hcorporation. Tous droits réservés.</p>
+                <p class="footer-tagline">51 jeux, un jour... patience ! 🎮</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/floating.js"></script>
+</body>
+</html>
